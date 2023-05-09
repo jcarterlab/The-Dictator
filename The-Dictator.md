@@ -3,6 +3,10 @@ The Dictator
 Jack Carter
 5/3/2023
 
+
+
+
+
 ## **Summary**
 
 Sacha Baron Cohen’s character in The Dictator feeds the stereotype that
@@ -51,6 +55,11 @@ outcome occurred by chance.
 </picture>
 
  
+
+  
+![p =
+\\frac{(a+b)\!(c+d)\!(a+c)\!(b+d)\!}{a\!b\!c\!d\!n\!}](https://latex.codecogs.com/png.latex?p%20%3D%20%5Cfrac%7B%28a%2Bb%29%21%28c%2Bd%29%21%28a%2Bc%29%21%28b%2Bd%29%21%7D%7Ba%21b%21c%21d%21n%21%7D
+"p = \\frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}")  
 
 Where…
 

@@ -2,6 +2,9 @@
 title: "The Dictator"
 author: "Jack Carter"
 date: "5/3/2023"
+header-includes:
+  - \usepackage[pages=some]{background}
+  - \backgroundsetup{scale=1,opacity=1,angle=0,contents={\includegraphics[width=\paperwidth,height=\paperheight]{image.jpeg}}}
 output:
   github_document:
     pandoc_args: --webtex
@@ -155,6 +158,8 @@ kable(table)
 </picture>
 
 &nbsp;
+
+$$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$$
 
 Where...
 
