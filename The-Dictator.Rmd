@@ -4,7 +4,7 @@ author: "Jack Carter"
 date: "5/3/2023"
 header-includes:
   - \usepackage[pages=some]{background}
-  - \backgroundsetup{scale=1,opacity=1,angle=0,contents={\includegraphics[width=\paperwidth,height=\paperheight]{image.jpeg}}}
+  - \backgroundsetup{scale=1,opacity=1,angle=0,contents={\includegraphics[width=\paperwidth,height=\paperheight]{https://camo.githubusercontent.com/2e36f862e1798c6bab0d5ee29373bd6c6a98047ffe1e39c9cf498517dbb0d102/68747470733a2f2f6c617465782e636f6465636f67732e636f6d2f706e672e6c617465783f70253230253344253230253543667261632537422532386125324262253239253231253238632532426425323925323125323861253242632532392532312532386225324264253239253231253744253742612532316225323163253231642532316e253231253744}}}
 output:
   github_document:
     pandoc_args: --webtex
