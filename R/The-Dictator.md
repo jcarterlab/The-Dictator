@@ -55,6 +55,7 @@ Where…
   - b = West change
   - c = Singapore remain
   - d = West remain
+  - n = total number of elections
   - \! = factorial - the product of an integer and all the integers
     below it
 
