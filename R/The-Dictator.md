@@ -48,6 +48,8 @@ outcome occurred by chance.
 
 ![Fisher’s Exact Test formula](fisher_formula.JPG)
 
+<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" width="200">
+
  
 
 Where…

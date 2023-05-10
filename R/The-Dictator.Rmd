@@ -159,6 +159,8 @@ kable(table, format = "simple", align = "l")
 
 ![Fisher's Exact Test formula](fisher_formula.JPG)
 
+<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" width="200">
+
 
 &nbsp;
 
