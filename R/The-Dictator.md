@@ -46,7 +46,7 @@ outcome occurred by chance.
 
  
 
-<div style="background-color: white; width: 300px;" data-markdown="1">
+<div style="background-color: yellow; width: 300px;" data-markdown="1">
 
   
 ![p =
