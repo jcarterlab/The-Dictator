@@ -114,8 +114,8 @@ EIU, Singapore remains 70 places off the top spot.
 A one tailed Fisher’s Exact Test was employed here. If a two tailed test
 is used instead, the results are still statistically significant. The
 results however only indicate the likelihood that Singapore’s election
-results could have occurred by chance - and seemingly unlikely events do
-sometimes happen by chance. This project therefore cannot be taken as
+outcomes could have occurred by chance - and seemingly unlikely events
+do sometimes happen by chance. This project therefore cannot be taken as
 definitive proof of a flawed democracy in Singapore.
 
  
