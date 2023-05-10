@@ -1,3 +1,3 @@
 # The-Dictator
 
-Sacha Baron Cohen's character in The Dictator resembles the head of a typical authoritarian regime ruling over a poor, less educated population. This project shows statistically how Singapore, a high income country with a quality education sector, appears to break this stereotype with its apparent authoritarian tendencies. 
+Sacha Baron Cohen’s character in The Dictator feeds the stereotype that authoritarian leaders reign only in poorer, less educated societies. This assumption is challenged here by demonstrating statistically that Singapore, a high income country with an education sector rivaling the West, likely has a flawed democracy.
