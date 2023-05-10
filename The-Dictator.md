@@ -56,16 +56,11 @@ outcome occurred by chance.
 
  
 
-<style>
-span.MathJax {
-  background-color: rgb(255,255,153)
-}
-</style>
-
-  
+<span style="background-color: rgb(255,255,153);padding:10px;">   
 ![p =
 \\frac{(a+b)\!(c+d)\!(a+c)\!(b+d)\!}{a\!b\!c\!d\!n\!}](https://latex.codecogs.com/png.latex?p%20%3D%20%5Cfrac%7B%28a%2Bb%29%21%28c%2Bd%29%21%28a%2Bc%29%21%28b%2Bd%29%21%7D%7Ba%21b%21c%21d%21n%21%7D
 "p = \\frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}")  
+</span>
 
  
 

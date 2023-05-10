@@ -159,13 +159,9 @@ kable(table)
 
 &nbsp;
 
-<style>
-span.MathJax {
-  background-color: rgb(255,255,153)
-}
-</style>
-
+<span style="background-color: rgb(255,255,153);padding:10px;">
 $$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$$
+</span>
 
 
 &nbsp;
