@@ -151,9 +151,7 @@ kable(table, format = "simple", align = "l")
 
 &nbsp;
 
-<div style="background-color: yellow; width: 300px;" markdown="1">
-$$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$$
-</div>
+$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$
 
 &nbsp;
 
