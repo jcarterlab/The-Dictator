@@ -9,7 +9,7 @@ Sacha Baron Cohen’s character in The Dictator feeds the stereotype that
 authoritarian leaders reign only in poorer, less educated societies.
 This assumption is challenged here by demonstrating statistically that
 Singapore, a high income country with an education sector rivaling the
-West, likely has a less than democratic regime.
+West, likely has a flawed democracy.
 
  
 
@@ -26,7 +26,7 @@ all 14 of the country’s elections.
 
 The average party change rate in Western liberal democracies is between
 30% and 50%. Singapore’s on the other hand is 0%. But could this have
-happened simply by chance?
+happened by chance?
 
 ![](The-Dictator_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
@@ -37,8 +37,6 @@ happened simply by chance?
 Fisher’s Exact Test can be used to determine the likelihood that such an
 outcome occurred by chance.
 
- 
-
 |        | Singapore | West |
 | ------ | :-------- | :--- |
 | Change | 0         | 37   |
@@ -46,9 +44,7 @@ outcome occurred by chance.
 
  
 
-![Fisher’s Exact Test formula](fisher_formula.JPG)
-
-<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" width="200">
+<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" height="50">
 
  
 
@@ -78,7 +74,7 @@ is just a 0.22%.
 ## **Statistical significance**
 
 As can be seen from the visualization below, the P-value obtained from
-Fisher’s Exact Test is well below the 0.05 (5%) threshold widely deemed
+Fisher’s Exact Test is well under the 0.05 (5%) threshold widely deemed
 to be statistically significant.
 
 ![](The-Dictator_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
@@ -99,14 +95,14 @@ EIU, Singapore remains 70 places off the top spot.
 
 #### Elections coding rules
 
-  - The analysis included all elections in each country since
+  - This analysis included all elections in each country since
     Singapore’s first in 1959
   - A change was defined as when a party receives more of the vote than
     the previous winner
   - If no overall majority was achieved, the party with the highest
     single share of the vote was deemed the winner
-  - Where multiple parties regularly band into coalitions, broad changes
-    ideology were used (liberal, conservative etc.)
+  - Where multiple parties regularly banded into coalitions, broad
+    changes ideology were used (liberal, conservative etc.)
   - If both a president and a prime minister existed, the most powerful
     position in that country was used
 
@@ -114,12 +110,12 @@ EIU, Singapore remains 70 places off the top spot.
 
 #### Test choice & limitations
 
-A one tailed Fisher’s Exact Test was used. If a two tailed test is used
-instead, the results are still statistically significant. The results
-however only indicate the likelihood that the Singaporean election
+A one tailed Fisher’s Exact Test was employed here. If a two tailed test
+is used instead, the results are still statistically significant. The
+results however only indicate the likelihood that Singapore’s election
 results could have occurred by chance - and seemingly unlikely events do
-sometimes happen. This project therefore cannot be taken as definitive
-proof of the presence of a flawed democracy in Singapore.
+sometimes happen by chance. This project therefore cannot be taken as
+definitive proof of a flawed democracy in Singapore.
 
  
 

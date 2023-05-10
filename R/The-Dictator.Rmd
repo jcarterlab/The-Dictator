@@ -53,7 +53,7 @@ NZ <- tibble(
 
 ## **Summary**
 
-Sacha Baron Cohen's character in The Dictator feeds the stereotype that authoritarian leaders reign only in poorer, less educated societies. This assumption is challenged here by demonstrating statistically that Singapore, a high income country with an education sector rivaling the West, likely has a less than democratic regime. 
+Sacha Baron Cohen's character in The Dictator feeds the stereotype that authoritarian leaders reign only in poorer, less educated societies. This assumption is challenged here by demonstrating statistically that Singapore, a high income country with an education sector rivaling the West, likely has a flawed democracy. 
 
 &nbsp;
 
@@ -97,7 +97,7 @@ legend("topright", inset = c(0, 0),
 
 ## **Party change rate**
 
-The average party change rate in Western liberal democracies is between 30% and 50%. Singapore's on the other hand is 0%. But could this have happened simply by chance? 
+The average party change rate in Western liberal democracies is between 30% and 50%. Singapore's on the other hand is 0%. But could this have happened by chance? 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
@@ -131,8 +131,6 @@ barplot(change_rate_df$change_rate, names.arg=c(pull(change_rate_df[1])),
 
 Fisher's Exact Test can be used to determine the likelihood that such an outcome occurred by chance.
 
-&nbsp;
-
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
 # combines western democracies into a single data frame for analysis
@@ -157,10 +155,7 @@ kable(table, format = "simple", align = "l")
 # $p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$
 ```
 
-![Fisher's Exact Test formula](fisher_formula.JPG)
-
-<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" width="200">
-
+<img src="fisher_formula.JPG" alt="Fisher's Exact Test formula" height="50">
 
 &nbsp;
 
@@ -218,7 +213,7 @@ The result indicates that the likelihood of Singapore holding 14 elections witho
 
 ## **Statistical significance**
 
-As can be seen from the visualization below, the P-value obtained from Fisher's Exact Test is well below the 0.05 (5%) threshold widely deemed to be statistically significant.
+As can be seen from the visualization below, the P-value obtained from Fisher's Exact Test is well under the 0.05 (5%) threshold widely deemed to be statistically significant.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
@@ -275,17 +270,17 @@ barplot(EIU$rank, names.arg=c(pull(EIU[1])), col="#993333",
 
 #### Elections coding rules
 
-- The analysis included all elections in each country since Singapore's first in 1959
+- This analysis included all elections in each country since Singapore's first in 1959
 - A change was defined as when a party receives more of the vote than the previous winner
 - If no overall majority was achieved, the party with the highest single share of the vote was deemed the winner
-- Where multiple parties regularly band into coalitions, broad changes ideology were used (liberal, conservative etc.)
+- Where multiple parties regularly banded into coalitions, broad changes ideology were used (liberal, conservative etc.)
 - If both a president and a prime minister existed, the most powerful position in that country was used
 
 &nbsp;
 
 #### Test choice & limitations
 
-A one tailed Fisher's Exact Test was used. If a two tailed test is used instead, the results are still statistically significant. The results however only indicate the likelihood that the Singaporean election results could have occurred by chance - and seemingly unlikely events do sometimes happen. This project therefore cannot be taken as definitive proof of the presence of a flawed democracy in Singapore. 
+A one tailed Fisher's Exact Test was employed here. If a two tailed test is used instead, the results are still statistically significant. The results however only indicate the likelihood that Singapore's election results could have occurred by chance - and seemingly unlikely events do sometimes happen by chance. This project therefore cannot be taken as definitive proof of a flawed democracy in Singapore. 
 
 &nbsp;
 
