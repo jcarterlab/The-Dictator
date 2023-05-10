@@ -151,11 +151,14 @@ kable(table, format = "simple", align = "l")
 
 &nbsp;
 
-![alt text](Fisher equation.JPG)
+```{r cars, eval=FALSE,echo=FALSE}
+# commented out because does not render properly on github dark mode
+# a picture of the commented out formula is inserted below instead
+# $p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$
+```
 
-$$
-p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}
-$$
+![Fisher's Exact Test formula](fisher_formula.JPG)
+
 
 &nbsp;
 

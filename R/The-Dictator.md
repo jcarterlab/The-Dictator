@@ -46,14 +46,7 @@ outcome occurred by chance.
 
  
 
-![alt text](Fisher%20equation.JPG)
-
-  
-![&#10;p =
-\\frac{(a+b)\!(c+d)\!(a+c)\!(b+d)\!}{a\!b\!c\!d\!n\!}&#10;](https://latex.codecogs.com/png.latex?%0Ap%20%3D%20%5Cfrac%7B%28a%2Bb%29%21%28c%2Bd%29%21%28a%2Bc%29%21%28b%2Bd%29%21%7D%7Ba%21b%21c%21d%21n%21%7D%0A
-"
-p = \\frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}
-")  
+![Fisher’s Exact Test formula](fisher_formula.JPG)
 
  
 
