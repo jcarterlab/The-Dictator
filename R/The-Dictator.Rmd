@@ -10,9 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(dplyr)
 library(tidyverse)
+library(gmp)
 library(tibble)
 library(knitr)
-library(gmp)
 
 # lists election results by country for singapore and the west
 Singapore <- tibble(
@@ -67,7 +67,7 @@ get_scatter <- function(df, title='') {
   n <- nrow(df)
   color <- list()
   for(i in 1:nrow(df)) {
-    color[i] <- if(df$change[i]==0) 'red' else 'blue'
+    color[i] <- if(df$change[i]==0) 'blue' else 'red'
   }
   set.seed(123)
   c <- tibble(
@@ -88,7 +88,7 @@ get_scatter(Canada, 'Canada')
 get_scatter(AUS, 'AUS')
 get_scatter(NZ, 'NZ')
 legend("topright", inset = c(0, 0),
-       legend = c("Remain", "Change"),
+       legend = c("Change", "Remain"),
        pch = 19,
        col = c('red', 'blue'))
 
@@ -96,7 +96,7 @@ legend("topright", inset = c(0, 0),
 
 ## **Party change rate**
 
-The average party change rate in Western liberal democracies is between 30% and 50%. Singapore's on the other hand is 0%. But could this have occurred simply by chance? 
+The average party change rate in Western liberal democracies is between 30% and 50%. Singapore's on the other hand is 0%. But could this have happened simply by chance? 
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
@@ -144,7 +144,7 @@ contingency_table <- tibble(
   West = c(sum(west$change),sum(west$change==0))
 )
 table <- column_to_rownames(contingency_table, "change")
-kable(table, format = "simple", align = "l")
+kable(table, format = "simple", align = "l", caption = "Table 1: Election results since 1959")
 
 ```
 
@@ -158,7 +158,7 @@ $$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$$
 
 Where...
 
-- p = the probability the election results occurred by chance
+- p = the probability Singapore's election results occurred by chance
 - a = Singapore change
 - b = West change
 - c = Singapore remain
@@ -296,3 +296,5 @@ A one tailed Fisher's Exact Test was used. If a two tailed test is used instead,
 - Wikipedia / Australia (2023) https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Australia
 
 - Wikipedia / New Zealand (2023) https://en.wikipedia.org/wiki/List_of_prime_ministers_of_New_Zealand
+
+&nbsp;
