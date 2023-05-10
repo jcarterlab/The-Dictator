@@ -2,7 +2,10 @@
 title: "The Dictator"
 author: "Jack Carter"
 date: "5/3/2023"
-output: "html_document"
+output:   
+  github_document:
+    pandoc_args: --webtex
+always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -47,8 +50,6 @@ NZ <- tibble(
 )
 
 ```
-
-&nbsp;
 
 ## **Summary**
 
@@ -144,15 +145,15 @@ contingency_table <- tibble(
   West = c(sum(west$change),sum(west$change==0))
 )
 table <- column_to_rownames(contingency_table, "change")
-kable(table, format = "simple", align = "l", caption = "Table 1: Election results since 1959")
+kable(table, format = "simple", align = "l")
 
 ```
 
 &nbsp;
 
-
+<div style="background-color: white; width: 300px;" markdown="1">
 $$p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}$$
-
+</div>
 
 &nbsp;
 

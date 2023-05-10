@@ -9,7 +9,7 @@ Sacha Baron Cohen’s character in The Dictator feeds the stereotype that
 authoritarian leaders reign only in poorer, less educated societies.
 This assumption is challenged here by demonstrating statistically that
 Singapore, a high income country with an education sector rivaling the
-West, appears to have a less than democratic regime.
+West, likely has a less than democratic regime.
 
  
 
@@ -26,7 +26,7 @@ all 14 of the country’s elections.
 
 The average party change rate in Western liberal democracies is between
 30% and 50%. Singapore’s on the other hand is 0%. But could this have
-occurred simply by chance?
+happened simply by chance?
 
 ![](The-Dictator_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
@@ -37,16 +37,16 @@ occurred simply by chance?
 Fisher’s Exact Test can be used to determine the likelihood that such an
 outcome occurred by chance.
 
+ 
+
 |        | Singapore | West |
-| :----- | --------: | ---: |
-| Change |         0 |   37 |
-| Remain |        14 |   60 |
+| ------ | :-------- | :--- |
+| Change | 0         | 37   |
+| Remain | 14        | 60   |
 
  
 
-<https://render.githubusercontent.com/render/math?math=e%5E%7Bi%20%5Cpi%7D%20%3D%20-1&mode=inline>
-
-<div style="background-color: rgb(255,255,153);">
+<div style="background-color: white; width: 300px;" data-markdown="1">
 
   
 ![p =
@@ -59,7 +59,7 @@ outcome occurred by chance.
 
 Where…
 
-  - p = the probability the election results occurred by chance
+  - p = the probability Singapore’s election results occurred by chance
   - a = Singapore change
   - b = West change
   - c = Singapore remain
