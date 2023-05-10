@@ -151,6 +151,8 @@ kable(table, format = "simple", align = "l")
 
 &nbsp;
 
+![alt text](Fisher equation.JPG)
+
 $$
 p = \frac{(a+b)!(c+d)!(a+c)!(b+d)!}{a!b!c!d!n!}
 $$
