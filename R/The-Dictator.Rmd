@@ -264,7 +264,7 @@ run_monte_carlo <- function(n) {
 samples <- run_monte_carlo(n)
 
 hist(samples, breaks=13, include.lowest=TRUE, right=F, col='darkblue',
-     main="Random samples = 100,000", xlab="Election changes", ylab="Samples")
+     main="Trials = 100,000", xlab="Election changes", ylab="Trials")
 abline(v=1, col="red")
 
 ```
