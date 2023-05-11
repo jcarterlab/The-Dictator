@@ -186,5 +186,27 @@ abline(h=0.05, col="blue")
 
 
 
+par(mfrow = c(1, 1))
+
+# runs a monte carlo simulation for 
+n <- 10^5
+run_monte_carlo <- function(n) {
+  samples <- list()
+  for(i in 1:n) {
+    samples[i] <- sum(sample(west$change, 14, replace=TRUE))
+  }
+  return(unlist(samples))
+}
+samples <- run_monte_carlo(n)
+
+hist(samples, breaks=13, include.lowest=TRUE, right=F, col='darkblue',
+     main="Random samples = 100,000", xlab="Election changes", ylab="Simulations")
+abline(v=1, col="red")
+
+round((sum(samples==1) / n),3)
+
+
+
+
 
 

@@ -9,7 +9,7 @@ Sacha Baron Cohen’s character in The Dictator feeds the stereotype that
 authoritarian leaders reign only in poorer, less educated societies.
 This assumption is challenged here by demonstrating statistically that
 Singapore, a high income country with an education sector rivaling the
-West, likely has a flawed democracy.
+West, likely has a substantially flawed democracy.
 
  
 
@@ -35,7 +35,7 @@ happened by chance?
 ## **Fisher’s Exact Test**
 
 Fisher’s Exact Test can be used to determine the likelihood that such an
-outcome occurred by chance.
+outcome could have occurred by chance.
 
 |        | Singapore | West |
 | ------ | :-------- | :--- |
@@ -74,11 +74,27 @@ is just a 0.22%.
 
 ## **Statistical significance**
 
-As can be seen from the visualization below, the P-value obtained from
-Fisher’s Exact Test is well under the 0.05 (5%) threshold widely deemed
-to be statistically significant.
+As can be seen from the plot below, the P-value obtained from Fisher’s
+Exact Test is well under the 0.05 (5%) threshold widely deemed to be
+statistically significant.
 
 ![](The-Dictator_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
+ 
+
+## **Monte Carlo Simulation**
+
+To visualize how unlikely this outcome would be for a genuine liberal
+democracy, a Monte Carlo simulation involving 100,000 trials of 14
+random samples from a pool of the West’s collective election results was
+run. The bar to he left of the red line indicates how often 0 changes
+occurred.
+
+![](The-Dictator_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
+ 
+
+Percentage of trials with 0 changes — 0.011%
 
  
 
@@ -88,7 +104,7 @@ Additional evidence comes from the Economist Intelligence Unit (EIU)’s
 Democracy Index (2022). Out of a total of 167 countries ranked by the
 EIU, Singapore remains 70 places off the top spot.
 
-![](The-Dictator_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](The-Dictator_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
  
 

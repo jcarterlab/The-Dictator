@@ -53,7 +53,7 @@ NZ <- tibble(
 
 ## **Summary**
 
-Sacha Baron Cohen's character in The Dictator feeds the stereotype that authoritarian leaders reign only in poorer, less educated societies. This assumption is challenged here by demonstrating statistically that Singapore, a high income country with an education sector rivaling the West, likely has a flawed democracy. 
+Sacha Baron Cohen's character in The Dictator feeds the stereotype that authoritarian leaders reign only in poorer, less educated societies. This assumption is challenged here by demonstrating statistically that Singapore, a high income country with an education sector rivaling the West, likely has a substantially flawed democracy. 
 
 &nbsp;
 
@@ -129,7 +129,7 @@ barplot(change_rate_df$change_rate, names.arg=c(pull(change_rate_df[1])),
 
 ## **Fisher's Exact Test**
 
-Fisher's Exact Test can be used to determine the likelihood that such an outcome occurred by chance.
+Fisher's Exact Test can be used to determine the likelihood that such an outcome could have occurred by chance.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
@@ -214,7 +214,7 @@ The result indicates that the likelihood of Singapore holding 14 elections witho
 
 ## **Statistical significance**
 
-As can be seen from the visualization below, the P-value obtained from Fisher's Exact Test is well under the 0.05 (5%) threshold widely deemed to be statistically significant.
+As can be seen from the plot below, the P-value obtained from Fisher's Exact Test is well under the 0.05 (5%) threshold widely deemed to be statistically significant.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
 
@@ -241,6 +241,37 @@ abline(h=0.05, col="blue")
 
 
 ```
+
+
+&nbsp;
+
+## **Monte Carlo Simulation**
+
+To visualize how unlikely this outcome would be for a genuine liberal democracy, a Monte Carlo simulation involving 100,000 trials of 14 random samples from a pool of the West's collective election results was run. The bar to he left of the red line indicates how often 0 changes occurred.  
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, dpi=600}
+
+n <- 10^5
+
+# runs a monte carlo simulation for 
+run_monte_carlo <- function(n) {
+  samples <- list()
+  for(i in 1:n) {
+    samples[i] <- sum(sample(west$change, 14, replace=TRUE))
+  }
+  return(unlist(samples))
+}
+samples <- run_monte_carlo(n)
+
+hist(samples, breaks=13, include.lowest=TRUE, right=F, col='darkblue',
+     main="Random samples = 100,000", xlab="Election changes", ylab="Samples")
+abline(v=1, col="red")
+
+```
+
+&nbsp;
+
+Percentage of trials with 0 changes --- `r round((sum(samples==1) / n),3)`%
 
 &nbsp;
 
